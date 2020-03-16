@@ -1,0 +1,62 @@
+@import '../../assets/styles/utils.scss';
+
+.bodyContainer {
+  margin-top: 40px;
+}
+
+.listColumn {
+  margin-bottom: 20px !important;
+}
+
+
+.listCard {
+  background-color: $color-white;
+  border-radius: 0.25rem !important;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+  width: 100% !important;
+  margin-bottom: 20px;
+
+  .cardContent {
+    text-align: center;
+    font-size: 25px !important;
+    font-family: 'schwifty';
+    width: 100%;
+
+    .cardDescription {
+      color: $color-red;
+    }
+  }
+
+  .cardImage {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    filter: contrast(80%);
+    overflow: hidden;
+    position: relative;
+    padding: 20px !important;
+    background-color: $color-red;
+    transition: 0.70s all ease;
+    width: 100% !important;
+  }
+
+  &:hover {
+    .cardImage {
+      filter: contrast(100%);
+      display: block;
+      transition: 0.70s all ease;
+    }
+  }
+}
+
+.loadingContainer {
+  height: 200px;
+  margin: 30px;
+  width: 100%;
+  display: block;
+}
